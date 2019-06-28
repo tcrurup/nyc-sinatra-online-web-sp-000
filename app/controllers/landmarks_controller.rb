@@ -1,8 +1,6 @@
 class LandmarksController < ApplicationController
 
-  get '/landmarks' do
-    erb :'landmarks/index'
-  end
+  #-----Create-----
 
   get '/landmarks/new' do
     erb :'landmarks/new'
@@ -11,5 +9,17 @@ class LandmarksController < ApplicationController
   post '/landmarks' do
     landmark = Landmark.create(params[:landmark])
   end
+
+  #-----Read------
+
+  get '/landmarks' do
+    erb :'landmarks/index'
+  end
+
+
+
+
+
+
 
 end
