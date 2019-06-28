@@ -6,7 +6,7 @@ class LandmarksController < ApplicationController
   end
 
   post '/landmarks' do
-    landmark = Landmark.new(params[:landmark])
+    landmark = Landmark.create(params[:landmark])
   end
 
 end
